@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns:th="https://www.thymeleaf.org">
+
+<head>
+    <title>Spring Security Example </title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+
+<form action="#" th:action="@{/addUser}" th:object="${user}" method="post">
+    <div><label> User Name : <input type="text" th:field="*{name}"/> </label></div>
+    <div><label> Email: <input type="text" th:field="*{email}"/> </label></div>
+    <div><input type="submit" value="Add"/></div>
+</form>
+</body>
+</html>
